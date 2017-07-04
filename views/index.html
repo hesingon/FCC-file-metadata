@@ -16,23 +16,5 @@
 
 <p>This is a mini web app that tells you how big your uploaded file is.</p>
 
-<script>
-    var form = document.forms.namedItem("myForm");
-
-    for.addEventListener('submit', function(ev){
-        var myFile = document.getElementById('myFile').files[0];
-        var oData = new FormData(form);
-        var oReq = new XMLHttpRequest();
-        oReq.open("POST", "/upload", true);
-
-        oReq.onload = function(oEvent) {
-            alert('File uploaded');
-        }
-
-        oReq.send(oData);
-        ev.preventDefault();
-    })
-</script>
-
 </body>
 </html>
