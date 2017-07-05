@@ -9,8 +9,19 @@
 
 <body>
 
-<form id='myForm' name='myForm' enctype='multipart/form-data' method='post'>
+<h2>To submit a single file</h2>
+<form id='myForm' name='myForm' enctype='multipart/form-data' method='post' action='/single'>
     <input type="file" name="myFile" />
+    <input id="myButton" type="submit" name="submit" >
+</form>
+
+<br>
+<br>
+
+<h2>To submit multiple files</h2>
+<form id='Form2' name='Form2' enctype='multipart/form-data' method='post' action='/multiple'>
+    <input type="file" name="files" />
+    <input type="file" name="files" />
     <input id="myButton" type="submit" name="submit" >
 </form>
 
